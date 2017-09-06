@@ -1,0 +1,28 @@
+﻿
+
+<div class="row" style="margin-top:50px;">
+    <div class="col-md-6 col-md-offset-3" style="margin-bottom:15px;">
+        <input type="text" class="form-control" id="search-txt" placeholder="Search by username" style="display:inline;" />
+        <button class="btn btn-primary" id="search-btn">Search</button>
+        <br />
+        <h2 id="user-header"></h2>
+        <br />
+    </div> 
+    <div>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Language</th>
+                <th>Stars <span id="sort-stars" class="btn btn-success glyphicon glyphicon-sort desc" aria-hidden="true"></span></th>
+                <th>Watchers <span id="sort-watchers"class="btn btn-success glyphicon glyphicon-sort desc" aria-hidden="true"></span></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+@section scripts
+{
+<script src="~/Scripts/index.js"></script>
+    }
